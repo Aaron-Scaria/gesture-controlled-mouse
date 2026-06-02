@@ -19,12 +19,11 @@ An interactive system that allows a user to control the computer cursor using ha
 
 ## 📂 Repository Structure
 
-text
-├── assets/                  # High-resolution block diagrams and circuit schematics
-├── source/                  # Core project codebase
-│   ├── Mouse_final.ino      # Hardware firmware logic and coordinate polling
-│   └── mouse.py            # Python background utility for OS cursor injection
-└── README.md                # System documentation and setup guide
+├── assets/
+├── source/
+│   ├── Mouse_final.ino
+│   └── mouse.py
+└── README.md
 
 ## 🚀 Setup & Installation
 
