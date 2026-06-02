@@ -40,3 +40,17 @@ text
 2. Install the Python dependencies:
    ```bash
    pip install pyserial pyautogui
+
+## 🛠️ Hardware Design
+
+To visualize the connection between the MPU6050 sensor, the tactile switches, and the microcontroller, refer to the simulation diagram below:
+
+![Circuit Diagram](assets/Schematics.png)
+
+### Pin Mapping
+| Component | Pin (ESP32/Uno) | Function |
+| :--- | :--- | :--- |
+| **MPU6050 SDA** | A4 / GPIO 21 | I2C Data |
+| **MPU6050 SCL** | A5 / GPIO 22 | I2C Clock |
+| **Left Click Button** | Digital 9 | Mouse Left Click |
+| **Right Click Button** | Digital 7 | Mouse Right Click |
