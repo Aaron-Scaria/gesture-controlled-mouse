@@ -16,3 +16,27 @@ An interactive system that allows a user to control the computer cursor using ha
 ## 📂 Project Structure
 * `source/`: Contains the firmware and Python scripts.
 * `assets/`: Contains circuit diagrams and block diagrams.
+
+## 📂 Repository Structure
+
+text
+├── assets/                  # High-resolution block diagrams and circuit schematics
+├── source/                  # Core project codebase
+│   ├── Mouse_final.ino      # Hardware firmware logic and coordinate polling
+│   └── mouse.py            # Python background utility for OS cursor injection
+└── README.md                # System documentation and setup guide
+
+## 🚀 Setup & Installation
+
+### 1. Hardware Initialization
+1. Connect the **MPU6050** and **Push Buttons** to the ESP32 according to the schematic in the `assets/` directory.
+2. Open `source/Mouse_final.ino` in the Arduino IDE.
+3. Ensure you have the necessary MPU6050 libraries installed.
+4. Select the **ESP32 Dev Module** (or your specific board) and the correct COM port.
+5. Compile and upload the firmware.
+
+### 2. Software Configuration
+1. Navigate to the `source/` directory on your PC.
+2. Install the Python dependencies:
+   ```bash
+   pip install pyserial pyautogui
